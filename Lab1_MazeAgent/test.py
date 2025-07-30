@@ -3,7 +3,7 @@ from maze_agent import MazeAgent
 from maze_generator import generate_maze
 
 GRID_SIZE = 11
-MAX_MOVES = 100000
+MAX_MOVES = 300
 
 KNOWN_MAZES = [
 '''#...####...
@@ -84,42 +84,42 @@ class TestMazeAgent(unittest.TestCase):
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 1")
+        #print("DID NOT PASS TEST 1")
 
     def test2(self):
         maze_str = MAZES[1]
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 2")
+        #print("DID NOT PASS TEST 2")
 
     def test3(self):
         maze_str = MAZES[2]
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 3")
+        #print("DID NOT PASS TEST 3")
 
     def test4(self):
         maze_str = MAZES[3]
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 4")
+        #print("DID NOT PASS TEST 4")
 
     def test5(self):
         maze_str = MAZES[4]
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 5")
+        #print("DID NOT PASS TEST 5")
 
     def test6(self):
         maze_str = MAZES[5]
         maze = self.stringToMaze(maze_str)
         self.assertTrue(self.runMaze(MazeAgent(), maze),
                         msg=f"did not reach end of maze within {MAX_MOVES} moves\n"+maze_str)
-        print("DID NOT PASS TEST 6")
+        #print("DID NOT PASS TEST 6")
 
 
 if __name__ == "__main__":
