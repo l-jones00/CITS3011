@@ -1,0 +1,17 @@
+Where you can improve (optional tweaks)
+
+You can keep your base rule and add any of these small, incremental upgrades later:
+1. Weight stronger threats more
+- Instead of 1, 2, 3 for 1/2/3 in a row, use something like 1, 4, 16 (or square the count).
+- This makes “three-in-a-row with a gap” much more valuable than scattered singles.
+
+2. 3-with-1-empty bonus
+- If a window has exactly 3 of yours and 1 empty, add a bigger bonus (e.g., +25).
+- Do the symmetric penalty for the opponent. This makes the AI very eager to create or block immediate threats.
+
+3. Center-column bias
+- Add a tiny bonus for having pieces in column 3 (the middle).
+- The center participates in more windows and is strong strategically.
+
+4. Immediate win/loss priority
+- You already do this via terminal checks. Keep those scores much bigger than heuristic numbers.
